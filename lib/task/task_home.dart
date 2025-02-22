@@ -142,6 +142,8 @@ class _TaskCardState extends State<TaskCard> {
         SizedBox(width: 4), // Space between timeline and content
         Expanded(
           child: InkWell(
+
+            
             child: Container(
               height: 120,
               padding: EdgeInsets.only(bottom: 5, left: 10, right:10,top:5),

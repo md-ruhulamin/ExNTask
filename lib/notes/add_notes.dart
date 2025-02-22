@@ -81,7 +81,7 @@ class _AddNotesState extends State<AddNotes> {
                 Expanded(
                   child: TextField(
                     keyboardType: TextInputType.multiline,
-                    maxLines: 100,
+                    maxLines: 99,
                     controller: descriptionController,
                     decoration: InputDecoration(
                       hintText: 'Description',

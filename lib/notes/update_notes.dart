@@ -84,7 +84,7 @@ class _UpdateNotesState extends State<UpdateNotes> {
                 child: TextField(
                   controller: decsriptionController,
                         keyboardType: TextInputType.multiline,
-                    maxLines: 100,
+                    maxLines: 99,
                   decoration: InputDecoration(
                     hintText: 'Description',
                     border: InputBorder.none,

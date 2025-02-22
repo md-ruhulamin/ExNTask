@@ -158,7 +158,7 @@ class _UpdateExpenseFormState extends State<UpdateExpenseForm> {
                 //    onSaved: (value) => _amount = double.parse(value!),
               ),
               SizedBox(
-                height: 10,
+                height: 9,
               ),
               // Date picker
               Row(

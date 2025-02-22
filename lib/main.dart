@@ -32,6 +32,8 @@ bool isDesktopPlatform() {
 //         ),
 
 class MyApp extends StatelessWidget {
+
+  
   final bool isFirstTime;
 
   MyApp({required this.isFirstTime});

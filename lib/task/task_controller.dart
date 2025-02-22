@@ -168,6 +168,8 @@ class _TaskListViewState extends State<TaskListView> {
     final groupedTasks = taskController.groupTasksByDate(filteredTasks);
     final sortedDates = groupedTasks.keys.toList()..sort();
     return Column(
+
+      
       children: [
         Padding(
           padding: const EdgeInsets.only(top: 2, bottom: 2),
