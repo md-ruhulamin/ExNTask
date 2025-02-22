@@ -169,7 +169,7 @@ class _TaskListViewState extends State<TaskListView> {
     final sortedDates = groupedTasks.keys.toList()..sort();
     return Column(
 
-      
+
       children: [
         Padding(
           padding: const EdgeInsets.only(top: 2, bottom: 2),
@@ -219,6 +219,7 @@ class _TaskListViewState extends State<TaskListView> {
         ),
         Expanded(
             child: ListView.builder(
+            
           itemCount: sortedDates.length,
           itemBuilder: (context, index) {
           
@@ -227,10 +228,11 @@ class _TaskListViewState extends State<TaskListView> {
 
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 // Date Header
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(2.0),
                   child: Text(
                     "${date.day}-${date.month}-${date.year}",
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),

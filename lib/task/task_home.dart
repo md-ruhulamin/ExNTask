@@ -118,7 +118,7 @@ class _TaskCardState extends State<TaskCard> {
           children: [
             Container(
               width: 2,
-              height: 60,
+              height: 45,
               color: Colors.grey,
             ),
             Container(
@@ -134,7 +134,7 @@ class _TaskCardState extends State<TaskCard> {
             // if (index != taskController.taskList.length)
             Container(
               width: 2,
-              height: 60,
+              height: 45,
               color: Colors.grey,
             ),
           ],
@@ -143,7 +143,7 @@ class _TaskCardState extends State<TaskCard> {
         Expanded(
           child: InkWell(
 
-            
+
             child: Container(
               height: 120,
               padding: EdgeInsets.only(bottom: 5, left: 10, right:10,top:5),
