@@ -78,15 +78,17 @@ class _AddNotesState extends State<AddNotes> {
                       fontWeight: FontWeight
                           .bold), // This sets the text style for typed text
                 ),
-                TextField(
-                  controller: descriptionController,
-                  maxLines: 8,
-                  decoration: InputDecoration(
-                    hintText: 'Description',
-                    border: InputBorder.none,
+                Expanded(
+                  child: TextField(
+                    keyboardType: TextInputType.multiline,
+                    maxLines: 100,
+                    controller: descriptionController,
+                    decoration: InputDecoration(
+                      hintText: 'Description',
+                      border: InputBorder.none,
+                    ),
                   ),
                 ),
-                Expanded(child: SizedBox()),
                 SizedBox(
                   height: 50,
                   child: ListView.builder(
@@ -97,7 +99,7 @@ class _AddNotesState extends State<AddNotes> {
                           onTap: () {
                             noteController.backgroundColor.value =
                                 colors[index];
-                                selectedindex=index;
+                            selectedindex = index;
                           },
                           child: Container(
                             margin: EdgeInsets.all(2),
@@ -109,7 +111,9 @@ class _AddNotesState extends State<AddNotes> {
                               border:
                                   Border.all(color: Colors.black12, width: 2),
                             ),
-                            child:selectedindex==index? Icon(Icons.done):SizedBox(),
+                            child: selectedindex == index
+                                ? Icon(Icons.done)
+                                : SizedBox(),
                           ),
                         );
                       }),

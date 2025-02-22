@@ -42,27 +42,27 @@ class ExpensesHome extends StatelessWidget {
                   children: [
                     Image.asset(
                       "assets/balance.png",
-                      height: 50,
+                      height: 45,
                     ),
                     SizedBox(
-                      width: 10,
+                      width: 3,
                     ),
                     Column(
                       children: [
                         CustomText(
-                          text: "Total Balance: ",
-                          size: 20,
-                        ),
-                        Obx(
-                          () => CustomText(
-                            text:
-                                '${controller.currentBalance.value.toStringAsFixed(1)} TK',
-                            size: 22,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
+                          text: "Current Balance: ",
+                          size: 17,
+                        ),Obx(
+                      () => CustomText(maxLine: 2,
+                        text:
+                            '${controller.currentBalance.value.toStringAsFixed(1)} TK',
+                        size: 19,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                       ],
                     ),
+                    
                   ],
                 )),
             SizedBox(
@@ -83,7 +83,7 @@ class ExpensesHome extends StatelessWidget {
                 ),
                 Obx(
                   () => ExpancesBox(
-                      text: 'Expanse',
+                      text: 'Expense',
                       imjPath: "assets/reduction.png",
                       value: controller.totalExpense.value.toStringAsFixed(0),
                       color: Colors.tealAccent.shade100),
@@ -222,15 +222,16 @@ class ExpancesBox extends StatelessWidget {
           decoration: BoxDecoration(
               color: color.withOpacity(0.4),
               borderRadius: BorderRadius.circular(20)),
-          height: 80,
+          height: 70,
           child: ListTile(
+            horizontalTitleGap: 2,
             contentPadding: EdgeInsets.symmetric(horizontal: 5),
             leading: Container(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.all(5),
                 decoration: BoxDecoration(
                     color: color.withAlpha(150),
                     borderRadius: BorderRadius.circular(15)),
-                child: Image.asset(imjPath)),
+                child: Image.asset(width: 35, imjPath)),
             title: Text(text),
             subtitle: CustomText(
               text: "${value} TK",

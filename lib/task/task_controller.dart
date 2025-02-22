@@ -22,7 +22,6 @@ class TaskController extends GetxController {
     taskList.value = await dbHelper.fetchTasks();
     print(taskList.value.length);
     taskList.value = taskList.reversed.toList();
-    print("Reversed");
   }
 
   Future<void> addTask(Task task) async {
@@ -152,7 +151,6 @@ class _TaskListViewState extends State<TaskListView> {
     switch (_selectedFilter) {
       case TaskFilter.completed:
         return widget.tasks.where((task) => task.taskColor == 4).toList();
-
       case TaskFilter.inProgress:
         return widget.tasks.where((task) => task.taskColor == 2).toList();
       case TaskFilter.pending:
@@ -172,22 +170,23 @@ class _TaskListViewState extends State<TaskListView> {
     return Column(
       children: [
         Padding(
-          padding: const EdgeInsets.only(top: 5, bottom: 5),
+          padding: const EdgeInsets.only(top: 2, bottom: 2),
           child: Wrap(
             spacing: 2.0,
             children: [
               ChoiceChip(
                 labelPadding: EdgeInsets.all(0),
-                label: Text('All'),
+                label: Text('All',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                 selected: _selectedFilter == TaskFilter.all,
                 onSelected: (selected) {
+                  
                   setState(() {
                     _selectedFilter = TaskFilter.all;
                   });
                 },
               ),
               ChoiceChip(
-                label: Text('Progress'),
+                label: Text('Progress',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                 selected: _selectedFilter == TaskFilter.inProgress,
                 onSelected: (selected) {
                   setState(() {
@@ -196,7 +195,7 @@ class _TaskListViewState extends State<TaskListView> {
                 },
               ),
               ChoiceChip(
-                label: Text('Pending'),
+                label: Text('Pending',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                 selected: _selectedFilter == TaskFilter.pending,
                 onSelected: (selected) {
                   setState(() {
@@ -205,7 +204,7 @@ class _TaskListViewState extends State<TaskListView> {
                 },
               ),
               ChoiceChip(
-                label: Text('Completed'),
+                label: Text('Completed',style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold),),
                 selected: _selectedFilter == TaskFilter.completed,
                 onSelected: (selected) {
                   setState(() {
@@ -220,7 +219,7 @@ class _TaskListViewState extends State<TaskListView> {
             child: ListView.builder(
           itemCount: sortedDates.length,
           itemBuilder: (context, index) {
-            print(widget.tasks.length);
+          
             DateTime date = sortedDates[index];
             List<Task> dailyTasks = groupedTasks[date]!;
 

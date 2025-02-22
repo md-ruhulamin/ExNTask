@@ -1,17 +1,13 @@
 // ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:note_app/database_helper.dart';
-import 'package:note_app/expences/expense_controller.dart';
-import 'package:note_app/expences/expenses_home.dart';
 import 'package:note_app/home/home.dart';
 import 'package:note_app/home/onboarding.dart';
-import 'package:note_app/notes/note_controller.dart';
-import 'package:note_app/task/task_controller.dart';
-import 'package:note_app/task/task_home.dart';
-import 'package:note_app/widget/custom_text.dart';
+import 'package:sqflite/sqflite.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
-import 'package:expressions/expressions.dart';
+
 import 'notes/notes_home.dart';
 
 Future<void> main() async {

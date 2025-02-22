@@ -80,17 +80,18 @@ class _UpdateNotesState extends State<UpdateNotes> {
                           .bold), // This sets the text style for typed text
                 ),
               ),
-              TextField(
-                controller: decsriptionController,
-                maxLines: 8,
-                decoration: InputDecoration(
-                  hintText: 'Description',
-                  border: InputBorder.none,
+              Expanded(
+                child: TextField(
+                  controller: decsriptionController,
+                        keyboardType: TextInputType.multiline,
+                    maxLines: 100,
+                  decoration: InputDecoration(
+                    hintText: 'Description',
+                    border: InputBorder.none,
+                  ),
                 ),
               ),
-              Expanded(
-                child: SizedBox(),
-              ),
+              
               SizedBox(
                 height: 50,
                 child: ListView.builder(

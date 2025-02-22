@@ -127,7 +127,7 @@ class _TaskCardState extends State<TaskCard> {
                   borderRadius: BorderRadius.circular(4),
                   color: Color(task.taskColor!).withAlpha(30)),
               child: Text(
-                formatTime(task.startDateTime),
+                formatTime(task.startDateTime),style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
 
@@ -139,7 +139,7 @@ class _TaskCardState extends State<TaskCard> {
             ),
           ],
         ),
-        SizedBox(width: 10), // Space between timeline and content
+        SizedBox(width: 4), // Space between timeline and content
         Expanded(
           child: InkWell(
             child: Container(
@@ -207,7 +207,7 @@ class _TaskCardState extends State<TaskCard> {
                         maxLine: 1,
                         color: Colors.blue,
                         fontWeight: FontWeight.bold,
-                        size: 14,
+                        size: 12,
                       ),
                       Row(
                         children: [
@@ -222,15 +222,15 @@ class _TaskCardState extends State<TaskCard> {
                                     DateTime.now(), task.deadlineDateTime),
                                 style: TextStyle(
                                     color: Colors.white,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 13)),
+                              //      fontWeight: FontWeight.bold,
+                                    fontSize: 12)),
                           ),
                           SizedBox(
-                            width: 5,
+                            width:2,
                           ),
                           Container(
                               padding: EdgeInsets.symmetric(
-                                  horizontal: 5, vertical: 2),
+                                  horizontal: 2, vertical: 2),
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(5),
                                   color: task.taskColor == 4
@@ -242,20 +242,20 @@ class _TaskCardState extends State<TaskCard> {
                                   ? Text(
                                       "Completed",
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 13),
+                                          color: Colors.white, fontSize: 12),
                                     )
                                   : task.taskColor == 2
                                       ? Text(
                                           "Progress",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 13),
+                                              fontSize: 12),
                                         )
                                       : Text(
                                           "Pending",
                                           style: TextStyle(
                                               color: Colors.white,
-                                              fontSize: 13),
+                                              fontSize: 12),
                                         ))
                         ],
                       ),
