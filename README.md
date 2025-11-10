@@ -5,7 +5,7 @@ Here’s a polished and professional **README.md** file for your Flutter project
 ```markdown
 # 📱 ExNTask — Expense, Note & Task Tracker App
 
-![App Preview](ExNTask%20Full.png)
+![App Preview](https://private-user-images.githubusercontent.com/149895119/511946023-52eff56c-fa16-4fdd-9366-5bc1cdbe7f2b.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjI3NTA3MTAsIm5iZiI6MTc2Mjc1MDQxMCwicGF0aCI6Ii8xNDk4OTUxMTkvNTExOTQ2MDIzLTUyZWZmNTZjLWZhMTYtNGZkZC05MzY2LTViYzFjZGJlN2YyYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMTEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTExMFQwNDUzMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNTk4Mzk0NTNiZjZmY2FkYWUzY2IwOTgyNWE1MDU3YWMwYTdkMjU4MTIwOGUxYTcxM2EzZTk5ZTQxMmU4Yzk2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.IkKywVknuIzv4lpwhlxYgQGshhfPF1womp73vPWubqo)
 
 **ExNTask** is a powerful and elegant Flutter application designed to help users manage their **Expenses**, **Notes**, and **Tasks** — all in one place.  
 It provides a smooth and organized way to track daily productivity and financial activities with an intuitive UI and seamless performance.
