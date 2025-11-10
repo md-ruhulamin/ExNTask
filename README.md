@@ -1,11 +1,6 @@
-Here’s a polished and professional **README.md** file for your Flutter project **ExNTask** — perfectly suited for GitHub:
-
----
-
-```markdown
 # 📱 ExNTask — Expense, Note & Task Tracker App
 
-![App Preview]<img width="1260" height="643" alt="Image" src="https://github.com/user-attachments/assets/52eff56c-fa16-4fdd-9366-5bc1cdbe7f2b" />
+<img width="1260" height="643" alt="App Preview" src="https://github.com/user-attachments/assets/52eff56c-fa16-4fdd-9366-5bc1cdbe7f2b" />
 
 **ExNTask** is a powerful and elegant Flutter application designed to help users manage their **Expenses**, **Notes**, and **Tasks** — all in one place.  
 It provides a smooth and organized way to track daily productivity and financial activities with an intuitive UI and seamless performance.
@@ -60,34 +55,11 @@ The app follows the **MVVM (Model-View-ViewModel)** pattern to maintain clean, m
 
 ---
 
-## 📂 Folder Structure
-
-```
-
-lib/
-│
-├── data/
-│   ├── models/
-│   └── local_storage/
-│
-├── view/
-│   ├── screens/
-│   └── widgets/
-│
-├── view_model/
-│   └── controllers/
-│
-└── main.dart
-
-````
-
----
-
 ## 💡 Highlights
 
-- Offline-first experience using local storage.
-- Simple and visually appealing UI.
-- Lightweight and fast performance.
+- Offline-first experience using local storage.  
+- Simple and visually appealing UI.  
+- Lightweight and fast performance.  
 - Easy integration of new features (modular MVVM design).
 
 ---
@@ -105,7 +77,6 @@ lib/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/ExNTask.git
-````
 
 2. **Navigate to the project directory**
 
@@ -141,4 +112,29 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ---
 
 ⭐ **If you like this project, don’t forget to star the repository!**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
